@@ -1,0 +1,115 @@
+.second-mobile-menu__container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: none;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: all 200ms ease-in-out;
+    z-index: 10;
+}
+
+.second-mobile-menu__container.active {
+    transform: translateX(0);
+    display: flex;
+}
+
+.second-mobile-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+    padding: 0 0 25px 0;
+}
+
+.second-mobile-menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px 0;
+    padding-bottom: 8px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #000;
+}
+
+.second-mobile-menu__region {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-mobile-menu__region img {
+    width: 18px;
+}
+
+.second-mobile-menu__region span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.second-mobile-menu__close {
+    width: 35px;
+    height: 35px;
+    background: none;
+    background-image: url(../../assets//images/icons/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.second-mobile-menu__close:hover,
+.second-mobile-menu__close:focus {
+    border: 2px solid #000;
+}
+
+.second-mobile-menu__content {
+    flex: 1;
+    margin: 0 30px;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.second-mobile-menu__list {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.second-mobile-menu__list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second-mobile-menu__list li {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.second-mobile-menu__list li:last-child {
+    border-bottom: none;
+}
+
+.second-mobile-menu__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 20px;
+    padding-top: 8px;
+    background-color: #ffffff;
+    border-top: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+
+    .second-mobile-menu__container {
+        display: flex;
+    }
+}

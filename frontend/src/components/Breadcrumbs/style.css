@@ -1,0 +1,36 @@
+.breadcrumbs {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs__current {
+    color: #495057;
+    pointer-events: none;
+}
+
+.breadcrumbs__divider {
+    margin: 0 5px;
+    color: #000000;
+}
+
+:not(.breadcrumbs__current)+.breadcrumbs__divider::before {
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs {
+        font-size: 14px;
+        display: table;
+    }
+}

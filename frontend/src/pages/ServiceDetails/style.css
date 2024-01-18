@@ -1,0 +1,121 @@
+.service-details__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(35.8deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4b8bfa 134.46%);
+    width: 65%;
+}
+
+.service-info__left,
+.service-info__right {
+    flex: 1;
+}
+
+.service-info__left {
+    padding: 4px 0px 4px 4px;
+    max-width: 70%;
+}
+
+.service-info__right {
+    padding: 4px;
+    max-width: 30%;
+}
+
+.service-info__content {
+    padding: 25px;
+    background: #fff;
+    height: 100%;
+}
+
+.service-info__item h4,
+.service-info__item p {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.service-info__item p {
+    margin: 0 0 15px;
+}
+
+.service-registration {
+    display: flex;
+    width: 30%;
+}
+
+.service-registration__content {
+    padding: 5px;
+    height: 100%;
+}
+
+.service-registration__item h4 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.service-registration__item p {
+    font-size: 14px;
+    margin: 0 0 25px;
+}
+
+.service-registration__item a {
+    padding: 10px 24px;
+    font-size: 14px;
+    border: none;
+    border-radius: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.service-registration__item a:hover {
+    background-color: #343a40;
+}
+
+@media (max-width: 768px) {
+    .service-details__container {
+        flex-direction: column;
+    }
+
+    .service-info {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .service-info__left,
+    .service-info__right {
+        max-width: 100%;
+    }
+
+    .service-info__left {
+        padding: 4px;
+    }
+
+    .service-info__right {
+        padding: 0 4px 4px 4px;
+    }
+
+    .service-info__content {
+        padding: 15px;
+    }
+
+    .service-registration {
+        width: 100%;
+    }
+
+    .service-registration__item h4 {
+        font-size: 14px;
+        margin: 0 0 5px;
+    }
+
+    .service-registration__item p {
+        font-size: 12px;
+        margin: 0 0 20px;
+    }
+}

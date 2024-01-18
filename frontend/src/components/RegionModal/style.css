@@ -1,0 +1,140 @@
+.region-modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.region-modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+.region-modal__container.active {
+    display: flex;
+}
+
+.region-modal__header,
+.region-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 0;
+    background: #f1f3f5;
+    border-radius: 16px 16px 0 0;
+}
+
+.region-modal__close {
+    width: 30px;
+    height: 30px;
+    background: none;
+    background-image: url(../../assets//images/icons/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.region-modal__close:hover,
+.region-modal__close:focus {
+    border: 2px solid #000;
+}
+
+.region-modal__content {
+    padding: 0 32px;
+    background: #f1f3f5;
+}
+
+.region-modal__title {
+    font-size: 18px;
+}
+
+.region-modal__subtitle {
+    font-size: 14px;
+}
+
+.region-modal__city-list {
+    columns: 4;
+    padding-top: 20px;
+}
+
+.region-modal__status {
+    position: relative;
+    font-size: 14px;
+    padding: 0 0 20px;
+}
+
+.region-modal__status.main {
+    font-weight: bolder;
+}
+
+.region-modal__status.region {
+    font-weight: lighter;
+}
+
+.region-modal__status.occupation,
+.region-modal__status.tempinop {
+    color: #808080;
+}
+
+.region-modal__status.main:hover,
+.region-modal__status.region:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.region-modal__status.occupation::after,
+.region-modal__status.tempinop::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.region-modal__status.occupation::after {
+    content: "Тимчасово окупованій";
+}
+
+.region-modal__status.tempinop::after {
+    content: "Тимчасово не працює";
+}
+
+.region-modal__status.occupation:hover::after,
+.region-modal__status.tempinop:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.region-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dee2e6;
+    border-radius: 0 0 16px 16px;
+    padding: 16px 32px;
+}
+
+@media (max-width: 768px) {
+
+    .region-modal__container.active {
+        display: none;
+    }
+}

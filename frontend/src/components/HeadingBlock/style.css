@@ -1,0 +1,23 @@
+.heading-block h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0 0;
+}
+
+.heading-block h4 {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+
+    .heading-block h2 {
+        font-size: 16px;
+    }
+    
+    .heading-block h4 {
+        font-size: 12px;
+    }
+}

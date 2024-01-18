@@ -1,0 +1,127 @@
+.sidebar__container {
+    background-color: #e7eef3;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.sidebar__container.active {
+    transform: translateX(0%);
+}
+
+.sidebar__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 30px 0;
+    background-color: #e7eef3;
+}
+
+.sidebar__close {
+    width: 35px;
+    height: 35px;
+    background: none;
+    background-image: url(../../assets//images/icons/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.sidebar__close:hover,
+.sidebar__close:focus {
+    border: 2px solid #000;
+}
+
+.sidebar__content {
+    flex: 1;
+    margin: 0 30px;
+    background-color: #e7eef3;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__item {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+}
+
+.sidebar__link:hover {
+    opacity: 0.6;
+}
+
+.sidebar__footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 20px;
+    background-color: #e7eef3;
+}
+
+.sidebar__contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.sidebar__contact-info span {
+    font-size: 16px;
+    color: #000000;
+    margin: 5px 0 0 0;
+}
+
+.sidebar__contact-info a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 5px 0;
+}
+
+.sidebar__contact-info a:hover {
+    opacity: 0.6;
+}
+
+.sidebar__social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar__social-icons li {
+    margin-right: 15px;
+}
+
+.sidebar__social-icons img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.sidebar__social-icons img:hover {
+    opacity: 0.6;
+}

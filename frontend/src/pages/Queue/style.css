@@ -1,0 +1,7 @@
+.page__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+    gap: 15px;
+}

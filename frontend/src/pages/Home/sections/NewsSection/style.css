@@ -1,0 +1,146 @@
+.news-section__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px;
+}
+
+.news-section__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.news-section__top h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.news-section__button a {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.news-section__left {
+    width: 38%;
+}
+
+.news-section__text {
+    padding: 25px 15px;
+}
+
+.news-section__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.news-section__right {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.news-section__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-section__bottom .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--default);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    height: 150px;
+    color: #000000;
+}
+
+.news-section__bottom .card.featured {
+    background: #ffe358;
+}
+
+.news-section__bottom .card__content {
+    padding: 15px 15px 0;
+}
+
+.news-section__bottom .card__content h2 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    opacity: 0.8;
+}
+
+.news-section__bottom .card__content h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.news-section__bottom .card__footer {
+    padding: 15px;
+}
+
+.news-section__bottom .card__footer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.news-section__bottom .card__footer a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .news-section__bottom {
+        flex-direction: column;
+    }
+
+    .news-section__left,
+    .news-section__right {
+        width: 100%;
+    }
+
+    .news-section__top h2 {
+        font-size: 18px;
+    }
+
+    .news-section__bottom .card__content h2 {
+        font-size: 12px;
+    }
+
+    .news-section__bottom .card__content h3 {
+        font-size: 14px;
+    }
+
+    .news-section__button a {
+        font-size: 16px;
+    }
+
+    .news-section__text {
+        padding: 5px 15px;
+    }
+
+    .news-section__right {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .news-section__bottom .card {
+        margin: 10px 0;
+    }
+
+    .news-section__bottom .card:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,120 @@
+.message__container {
+    max-width: 70ch;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.message__content {
+    border-radius: 16px;
+    margin: 0 0 15px 0;
+    padding: 24px 32px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.message__content:last-child {
+    margin: 0;
+}
+
+.message__content.error {
+    background: var(--red-0);
+    color: var(--red-9);
+    text-align: center;
+    font-weight: 600;
+    padding: 24px 32px;
+}
+
+.alert-info,
+.alert-warning,
+.alert-success,
+.alert-important,
+.alert-pending,
+.alert-confirmed,
+.alert-cancelled,
+.alert-completed {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.alert-info {
+    color: var(--blue-9);
+}
+
+.alert-warning {
+    color: var(--yellow-9);
+}
+
+.alert-success {
+    color: var(--green-9);
+}
+
+.alert-important {
+    color: var(--orange-9);
+}
+
+.alert-pending {
+    color: var(--yellow-9);
+}
+
+.alert-confirmed {
+    color: var(--green-9);
+}
+
+.alert-cancelled {
+    color: var(--red-9);
+}
+
+.alert-completed {
+    color: var(--blue-9);
+}
+
+.message__content.info {
+    background: var(--blue-0);
+}
+
+.message__content.warning {
+    background: var(--yellow-0);
+}
+
+.message__content.success {
+    background: var(--green-0);
+}
+
+.message__content.important {
+    background: var(--orange-0);
+}
+
+.message__content.pending {
+    background: var(--yellow-0);
+}
+
+.message__content.confirmed {
+    background: var(--green-0);
+}
+
+.message__content.cancelled {
+    background: var(--red-0);
+}
+
+.message__content.completed {
+    background: var(--blue-0);
+}
+
+.message__link {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.message__link a {
+    font-size: 14px;
+    color: var(--blue-7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.message__link a:hover {
+    color: var(--blue-8);
+}

@@ -1,0 +1,9 @@
+.page__container {
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+.page__wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
